@@ -1,6 +1,4 @@
-# .github/workflows/ci.yml
-
-name: Slack Bot CI
+name: Python Slack Feedback Bot CI
 
 on:
   push:
@@ -14,12 +12,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
