@@ -19,7 +19,7 @@ class SlackFeedbackBot:
         try:
             response = self.client.chat_postMessage(
                 channel=channel,
-                text="Customer Satisfaction Survey Feedback",
+                text="How was your experience today? Please reply with 👍 or 👎",
                 blocks=blocks
             )
             logger.info(f"✅ Message sent successfully. Timestamp: {response['ts']}")
