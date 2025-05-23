@@ -1,6 +1,9 @@
-slack-sdk>=3.21.3
+
+# This is a requirements file for a Python project that uses Slack SDK and other libraries.
+# It specifies the required packages and their versions.
+##pip install -r requirements.txt
+slack_sdk>=3.21.3
 python-dotenv>=1.0.1
+pytest>=8.3.5
 slack-bolt>=1.20.0
 slack-logger>=0.1.0
-pytest>=pytest-8.3.5
-##pip install -r requirements.txt
